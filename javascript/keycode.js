@@ -12,7 +12,7 @@ let div = document.querySelector('div')
 
 document.addEventListener("keypress", (e) => {
 
-    div.classList.remove('show');
+    // div.classList.remove('show');
     keyEvent2[0].textContent = e.keyCode
     keyEvent[0].textContent = e.key;
     keyEvent[1].textContent = e.which;
