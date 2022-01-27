@@ -4,18 +4,23 @@
 // showhidebtn.addEventListener('keypress', () => {
 //     document.classList.remove('show');
 // }) 
+// let keyEvent2 = document.getElementsByTagName("h1")
+const keyEvent = document.getElementsByTagName("h2");
+const showMain = document.getElementById('main-container')
+const instructions = document.getElementById('instructions')
 
-let keyEvent = document.getElementsByTagName("h2");
-let keyEvent2 = document.getElementsByTagName("h1")
-let div = document.querySelector('div')
+const div = document.querySelector('div')
+
+showMain.style.display = 'none'
 
 
 document.addEventListener("keypress", (e) => {
-
+    showMain.style.display = ''
+    instructions.textContent = ''
     // div.classList.remove('show');
-    keyEvent2[0].textContent = e.keyCode
-    keyEvent[0].textContent = e.key;
-    keyEvent[1].textContent = e.which;
-    keyEvent[2].textContent = e.code; 
+    keyEvent[0].textContent = e.which;
+    keyEvent[1].textContent = e.key;
+    keyEvent[2].textContent = e.which;
+    keyEvent[3].textContent = e.code; 
 
 })
